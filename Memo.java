@@ -25,5 +25,33 @@ class Memo
 
         // System.out.print(balls[i] + ' ');    // balls[i] + (int)' ' 출력됨
         System.out.print(balls[i] + " ");
+
+        // 207p
+        // 둘다 가능
+        String name = new String("Kim");
+        String names = "Kim";   // String에 대한 예외
+
+        // 208p
+        // String클래스의 주요 메서드
+        char charAt(int index);
+        int length();
+        String substring(int from, int to);
+        boolean equals(Object obj);
+        char[] toCharArray();
+
+        // 210p [05-14]
+        System.println(chArr); // ABCDE         -> 내용 나옴(예외)
+        System.println(intArr); // [I@18b4aac2  -> 주소와 타입 나옴
+
+        // 213p
+        System.exit(0);
+
+        // 213p
+        Integer.parseInt(args[i]);
+
+        /// 227p 입력
+        import java.util.*;
+        Scanner scanner = new Scanner(System.in);
+        String tmp = scanner.nextLine();
     }
 }
