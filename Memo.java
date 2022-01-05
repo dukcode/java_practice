@@ -53,5 +53,12 @@ class Memo
         import java.util.*;
         Scanner scanner = new Scanner(System.in);
         String tmp = scanner.nextLine();
+
+        // 320p
+        // ch07 07-03 DeckTest.java
+        // String toString() 메서드가 구현되어 있으면 println에 사용 가능
+        Card c = d.pick(0);
+        System.out.println(c.toString());
+        // System.out.println(c);   // 도 가능
     }
 }
