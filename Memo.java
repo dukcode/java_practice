@@ -60,5 +60,7 @@ class Memo
         Card c = d.pick(0);
         System.out.println(c.toString());
         // System.out.println(c);   // 도 가능
+
+        // static member 명시적 초기화 시점 언제인가?
     }
 }
