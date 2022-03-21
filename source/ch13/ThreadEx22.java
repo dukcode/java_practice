@@ -3,10 +3,10 @@ package ch13;
 /**
  * ThreadEx21
  */
-public class ThreadEx21 {
+public class ThreadEx22 {
 
     public static void main(String[] args) {
-        RunnableEx21 r = new RunnableEx21();
+        RunnableEx22 r = new RunnableEx22();
         new Thread(r).start();
         new Thread(r).start();
 
@@ -21,7 +21,7 @@ class Account {
         return balance;
     }
 
-    public void withdraw(int money) {
+    public synchronized void withdraw(int money) {
         if (balance >= money) {
             try {
                 Thread.sleep(1000);
@@ -31,7 +31,7 @@ class Account {
     }
 }
 
-class RunnableEx21 implements Runnable {
+class RunnableEx22 implements Runnable {
 
     Account acc = new Account();
 
@@ -44,4 +44,5 @@ class RunnableEx21 implements Runnable {
         }
     }
 }
+
 
